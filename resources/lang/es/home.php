@@ -109,6 +109,7 @@ return [
     'surname_missing' => 'Estamos buscando a :surname',
     'surname_found' => 'Estamos buscando a familiares de :surname',
     'more_information' => 'Más información en nuestra página web o redes sociales',
+    'organization_title' => 'Personas Perdidas - Red Solidaria',
   ],
 
   // people.create

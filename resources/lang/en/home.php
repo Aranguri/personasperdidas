@@ -104,6 +104,7 @@ return [
     'surname_missing' => 'We are looking for :surname',
     'surname_found' => 'We are looking for relatives of :surname',
     'more_information' => 'More information on our website or social networks',
+    'organization_title' => 'Personas Perdidas - Red Solidaria',
   ],
 
   // people.create

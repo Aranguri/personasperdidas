@@ -118,7 +118,8 @@
   @endif
 
   <h2 id="image-section">{{ trans('forms.image') }}</h2>
-  @if (file_exists(public_path('/images/people/' . $person->id . '_256.jpg')))
+  <?php $file_headers = @get_headers(url('/') . '/images/people/' . $person->id . '_256.jpg') ?>
+  @if ($file_headers && $file_headers[0] != 'HTTP/1.1 404 Not Found')
     <img src="{{ url('/') }}/images/people/{{ $person->id }}_256.jpg?{{ uniqid() }}" id="people-show-image">
     <a class="btn btn-success btn-responsive" onclick="return launchEditor('people-show-image', '{{ url('/') }}/images/people/{{ $person->id }}_256.jpg?{{ uniqid() }}');">
       <i class="material-icons">edit</i>

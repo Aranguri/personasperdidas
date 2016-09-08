@@ -8,6 +8,10 @@
 </head>
 <body>
   <div class="ui container center">
+    <img class="ui rounded image" id="print-organization-logo" src="{{ URL('/') }}/images/src/logo.png">
+    <h1 id="print-organization-title">
+      {{ trans('home.print.organization_title') }}
+    </h1>
     <h1 id="print-title">
       @if ($person->name && $person->surname)
         {{ trans('home.print.name_surname_' . $person->status, ['name' => $person->name, 'surname' => $person->surname]) }}

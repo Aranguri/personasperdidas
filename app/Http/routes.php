@@ -117,7 +117,10 @@ Route::delete('panel/deleted/{model}/{id}/{status?}', ['as' => 'panel.deleted.de
 
 // compatibility
 Route::get('new/', ['as' => 'compatibility.home.index', 'uses' => 'Home\CompatibilityController@index']);
-Route::get('new/{page}', ['as' => 'compatibility.home.index', 'uses' => 'Home\CompatibilityController@page']);
+Route::get('new/{page}{extension}', ['as' => 'compatibility.home.index', 'uses' => 'Home\CompatibilityController@page'])->where([
+    'page' => '[a-zA-Z0-9-_]+',
+    'extension' => '\..+'
+]);;
 Route::get('new/panel/{page}', ['as' => 'compatibility.panel.index', 'uses' => 'Home\CompatibilityController@panelPage']);
 
 // people.show

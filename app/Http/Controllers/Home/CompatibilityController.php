@@ -19,28 +19,28 @@ class CompatibilityController extends Controller
   public function page($uri, Request $request = null)
   {
     switch ($uri) {
-      case 'index.php':
+      case 'index':
         return redirect()->route('home.people.index');
         break;
-      case 'encontradas.php':
+      case 'encontradas':
         return redirect()->route('home.people.index', 'looking_for_their_families');
         break;
-      case 'queHacer.php':
+      case 'queHacer':
         return redirect()->route('home.recommendations');
         break;
-      case 'reportar.php':
+      case 'reportar':
         return redirect()->route('home.people.create');
         break;
-      case 'contacto.php':
+      case 'contacto':
         return redirect()->route('home.suggestion.create');
         break;
-      case 'colaboradores.php':
+      case 'colaboradores':
         return redirect()->route('home.collaborators');
         break;
-      case 'suscribirse.php':
+      case 'suscribirse':
         return redirect()->route('home.subscribers.subscribe');
         break;
-      case 'masInfo.php':
+      case 'masInfo':
         $previous_id = $request->input('persona');
         $person = Person::where('previous_id', $previous_id)->first();
         if ($person) {

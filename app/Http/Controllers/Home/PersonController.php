@@ -20,7 +20,7 @@ class PersonController extends Controller
   {
     $status = statusFromUrlParameter($status);
 
-    $people = Person::where('status', $status)->orderBy('missing_at', 'desc')->paginate(24);
+    $people = Person::where('status', $status)->orderBy('created_at', 'desc')->paginate(24);
 
     return view('home.people.index', compact('people', 'status'));
   }

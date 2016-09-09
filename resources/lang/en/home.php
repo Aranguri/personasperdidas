@@ -75,19 +75,31 @@ return [
     'article_other' => 'He',
     'article_woman' => 'She',
 
-    'name_surname_missing' => ':name :surname is missing. ',
+    'seen_man' => 'seen',
+    'seen_other' => 'seen',
+    'seen_woman' => 'seen',
+
+    'missing_man' => 'missing',
+    'missing_other' => 'missing',
+    'missing_woman' => 'missing',
+
+    'found_man' => 'founded',
+    'found_other' => 'founded',
+    'found_woman' => 'founded',
+
+    'name_surname_missing' => ':name :surname is :missing. ',
     'name_surname_found' => 'We are looking for relatives of :name :surname. ',
-    'name_missing' => ':name is missing. ',
+    'name_missing' => ':name is :missing. ',
     'name_found' => 'We are looking for relatives of :name. ',
-    'surname_missing' => ':surname is missing. ',
+    'surname_missing' => ':surname is :missing. ',
     'surname_found' => 'We are looking for relatives of :surname. ',
 
-    'date_location_missing' => ':article was seen for last time at :date, in :location. ',
-    'date_location_found' => ':article was found at :date, in :location. ',
-    'date_missing' => ':article was seen for last time at :date. ',
-    'date_found' => ':article was found at :date. ',
-    'location_missing' => ':article was seen for last time in :location. ',
-    'location_found' => ':article was found in :location. ',
+    'date_location_missing' => ':article was :seen for last time at :date, in :location. ',
+    'date_location_found' => ':article was :found at :date, in :location. ',
+    'date_missing' => ':article was :seen for last time at :date. ',
+    'date_found' => ':article was :found at :date. ',
+    'location_missing' => ':article was :seen for last time in :location. ',
+    'location_found' => ':article was :found in :location. ',
 
     'age' => ':article is :age years old.',
 

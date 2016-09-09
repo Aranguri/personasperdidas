@@ -57,18 +57,18 @@
   <img class="ui centered rounded image" id="person-image" src="{{ URL('/') }}/images/people/{{ $person->id }}.jpg">
   <h2>
     @if ($person->name && $person->surname)
-      {{ trans('home.description.name_surname_' . $person->status, ['name' => $person->name, 'surname' => $person->surname]) }}
+      {{ trans('home.description.name_surname_' . $person->status, ['name' => $person->name, 'surname' => $person->surname, 'missing' => trans('home.description.missing_' . $person->gender)]) }}
     @elseif ($person->name)
-      {{ trans('home.description.name_' . $person->status, ['name' => $person->name]) }}
+      {{ trans('home.description.name_' . $person->status, ['name' => $person->name, 'missing' => trans('home.description.missing_' . $person->gender)]) }}
     @elseif ($person->surname)
-      {{ trans('home.description.surname_' . $person->status, ['surname' => $person->surname]) }}
+      {{ trans('home.description.surname_' . $person->status, ['surname' => $person->surname, 'missing' => trans('home.description.missing_' . $person->gender)]) }}
     @endif
     @if ($person->missing_at && getLocation($person))
-      {{ trans('home.description.date_location_' . $person->status, ['article' => trans('home.description.article_' . $person->gender), 'date' => $person->missing_at, 'location' => getLocation($person)]) }}
+      {{ trans('home.description.date_location_' . $person->status, ['article' => trans('home.description.article_' . $person->gender), 'date' => $person->missing_at, 'location' => getLocation($person), 'seen' => trans('home.description.seen_' . $person->gender), 'found' => trans('home.description.founded_' . $person->gender)]) }}
     @elseif ($person->missing_at)
-      {{ trans('home.description.date_' . $person->status, ['article' => trans('home.description.article_' . $person->gender), 'date' => $person->missing_at]) }}
+      {{ trans('home.description.date_' . $person->status, ['article' => trans('home.description.article_' . $person->gender), 'date' => $person->missing_at, 'seen' => trans('home.description.seen_' . $person->gender), 'found' => trans('home.description.founded_' . $person->gender)]) }}
     @elseif (getLocation($person))
-      {{ trans('home.description.location_' . $person->status, ['article' => trans('home.description.article_' . $person->gender), 'location' => getLocation($person)]) }}
+      {{ trans('home.description.location_' . $person->status, ['article' => trans('home.description.article_' . $person->gender), 'location' => getLocation($person), 'seen' => trans('home.description.seen_' . $person->gender), 'found' => trans('home.description.founded_' . $person->gender)]) }}
     @endif
   </h2>
   <h3>

@@ -80,19 +80,31 @@ return [
     'article_other' => 'El',
     'article_woman' => 'Ella',
 
-    'name_surname_missing' => ':name :surname está perdido. ',
+    'seen_man' => 'visto',
+    'seen_other' => 'visto',
+    'seen_woman' => 'vista',
+
+    'missing_man' => 'perdido',
+    'missing_other' => 'perdido',
+    'missing_woman' => 'perdida',
+
+    'found_man' => 'encontrado',
+    'found_other' => 'encontrado',
+    'found_woman' => 'encontrada',
+
+    'name_surname_missing' => ':name :surname está :missing. ',
     'name_surname_found' => 'Estamos buscando a familiares de :name :surname. ',
-    'name_missing' => ':name está perdido. ',
+    'name_missing' => ':name está :missing. ',
     'name_found' => 'Estamos buscando a familiares de :name. ',
-    'surname_missing' => ':surname está perdido. ',
+    'surname_missing' => ':surname está :missing. ',
     'surname_found' => 'Estamos buscando a familiares de :surname. ',
 
-    'date_location_missing' => 'Fue visto por última vez el :date, en :location. ',
-    'date_location_found' => 'Fue encontrado el :date, en :location. ',
-    'date_missing' => 'Fue visto por última vez el :date. ',
-    'date_found' => 'Fue encontrado el :date. ',
-    'location_missing' => 'Fue visto por última vez en :location. ',
-    'location_found' => 'Fue encontrado en :location. ',
+    'date_location_missing' => 'Fue :seen por última vez el :date, en :location. ',
+    'date_location_found' => 'Fue :founded el :date, en :location. ',
+    'date_missing' => 'Fue :seen por última vez el :date. ',
+    'date_found' => 'Fue :found el :date. ',
+    'location_missing' => 'Fue :seen por última vez en :location. ',
+    'location_found' => 'Fue :found en :location. ',
 
     'age' => 'Tiene :age años.',
 

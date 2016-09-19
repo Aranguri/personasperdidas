@@ -80,6 +80,7 @@
         <td>{{ trans('forms.image') }}</td>
         <td>{{ trans('forms.name') }}</td>
         <td>{{ trans('panel.location') }}</td>
+        <td>G.</td>
         @if ($general_status == 'missing_to_validate' || $general_status == 'missing')
           <td>{{ trans('forms.missing_at') }}</td>
         @elseif ($general_status == 'found_to_validate' || $general_status == 'found')
@@ -104,6 +105,11 @@
               <td>{{ substr(getLocation($person), 0, 31) }}...</td>
             @else
               <td>{{ getLocation($person) }}</td>
+            @endif
+            @if ($person->gender)
+              <td>0</td>
+            @else
+              <td>1</td>
             @endif
             @if ($general_status == 'missing_to_validate' || $general_status == 'missing')
               @if ($person->missing_at)

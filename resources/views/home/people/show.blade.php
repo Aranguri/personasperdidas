@@ -11,6 +11,8 @@
   <meta property="og:description" content="{{ trans('home.person.description_found', ['name' => $person->name, 'surname' => $person->surname, 'found' => trans('home.person.found_' . $person->gender), 'article' => ($person->gender == 'woman') ? 'she' : 'he', 'address' => getLocation($person), 'date' => $person->found_at]) }}" />
 @endif
 <meta property="og:image" content="{{ URL('/') }}/images/people/{{ $person->id }}_256.jpg" />
+<meta property="og:image:width" content="{{ getimagesize(URL('/') . '/images/people/' . $person->id . '_256.jpg')[0] }}" />
+<meta property="og:image:height" content="{{ getimagesize(URL('/') . '/images/people/' . $person->id . '_256.jpg')[1] }}" />
 <meta property="fb:app_id" content="145634995501895" />
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@adultosperdidos">
@@ -54,7 +56,7 @@
     </a>
     </a>
   </div>
-  <img class="ui centered rounded image" id="person-image" src="{{ URL('/') }}/images/people/{{ $person->id }}.jpg">
+  <img class="ui centered rounded image" id="person-image" src="{{ URL('/') }}/images/people/{{ $person->id }}_512.jpg">
   <h2>
     @if ($person->name && $person->surname)
       {{ trans('home.description.name_surname_' . $person->status, ['name' => $person->name, 'surname' => $person->surname, 'missing' => trans('home.description.missing_' . $person->gender)]) }}

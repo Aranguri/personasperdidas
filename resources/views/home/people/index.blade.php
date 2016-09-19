@@ -62,6 +62,6 @@ $('.special.cards .image').dimmer({
 });
 </script>
 @foreach ($people as $person)
-  <script>$('#item-image{{ $person->id }}').css('background', 'url("/images/people/{{ $person->id }}.jpg") center / cover');</script>
+  <script>$('#item-image{{ $person->id }}').css('background', 'url("/images/people/{{ $person->id }}_256.jpg") center / cover');</script>
 @endforeach
 @endsection

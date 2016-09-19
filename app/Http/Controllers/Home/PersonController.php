@@ -77,7 +77,7 @@ class PersonController extends Controller
       $request['found_at'] = Carbon::create($request->year, $request->month, $request->day);
     }
 
-    $person = Person::create($request->except(['reporter', 'country_id', 'image', 'year', 'month', 'day', 'has_disease']));
+    $person = Person::create($request->except(['reporter', 'image', 'year', 'month', 'day', 'has_disease']));
 
     if ($request->hasFile('image')) {
       saveImage($person->id, 'people', 'input');

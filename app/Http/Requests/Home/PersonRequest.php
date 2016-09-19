@@ -24,7 +24,6 @@ class PersonRequest extends Request
   public function rules()
   {
     return [
-      'status' => 'required',
       'name' => 'required',
       'surname' => 'required',
       'birth_year' => 'required',
@@ -34,7 +33,7 @@ class PersonRequest extends Request
       'area' => 'required',
       'year' => 'required',
       'month' => 'required',
-      'reporter.name' => 'required',
+      'reporter.reporter_name' => 'required',
       'reporter.relationship' => 'required',
       'reporter.phone' => 'required',
       'reporter.email' => 'required|email',

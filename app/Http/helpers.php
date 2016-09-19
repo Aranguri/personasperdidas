@@ -256,7 +256,7 @@ function getLocation($model)
   $location = '';
 
   if ($model->address != null && $model->area != null && $model->province != null) {
-    $location = $person->address . ', ' . $person->area . ', ' . $model->province->name;
+    $location = $model->address . ', ' . $model->area . ', ' . $model->province->name;
   }
   else if ($model->area != null && $model->province != null) {
     $location = $model->area . ', ' . $model->province->name;

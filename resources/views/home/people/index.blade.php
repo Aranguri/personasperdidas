@@ -2,7 +2,13 @@
 
 @section ('content')
 <div class="ui container">
-    @if ($people)
+  {!! Form::open(['route' => ['home.people.search', urlParameterFromStatus($status)], 'class' => 'ui form', 'id' => 'search-form']) !!}
+    <div class="ui action input">
+      {!! Form::text('search', null, ['id' => 'search-text', 'placeholder' => trans('forms.search_text')]) !!}
+      <button class="ui blue button">{{ trans('forms.search') }}</button>
+    </div>
+  {!! Form::close() !!}
+    @if ($people->toArray()['total'] != 0)
       <div class="ui special cards grid">
         @foreach ($people as $person)
           <div class="ui card grid-item">
@@ -50,7 +56,7 @@
         @include('partials.pagination', ['paginator' => $people, 'interval' => 5])
       </div>
     @else
-      {{ trans('home.no_results') }}
+      <h2 class="center">{{ trans('home.no_results') }}</h2>
     @endif
 </div>
 @endsection

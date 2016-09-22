@@ -53,6 +53,7 @@ return [
   'more_details' => 'Más detalles',
   'previous' => 'Anterior',
   'next' => 'Siguiente',
+  'no_results' => 'La búsqueda no dio resultados. Probá con otro término.',
 
   // people.show
   'send_contribution' => 'Sé algo acerca de :name',

@@ -12,7 +12,8 @@
 */
 
 // home.people
-Route::get('/{status?}', ['as' => 'home.people.index', 'uses' => 'Home\PersonController@index'])->where('status','|looking_for_their_families');
+Route::get('/{status?}/{search?}', ['as' => 'home.people.index', 'uses' => 'Home\PersonController@index'])->where('status','|looking_for_their_families|missing');
+Route::post('/{status?}', ['as' => 'home.people.search', 'uses' => 'Home\PersonController@search'])->where('status','looking_for_their_families|missing');
 Route::get('/print/{id}', ['as' => 'home.people.showForPrint', 'uses' => 'Home\PersonController@showForPrint']);
 
 // home.people.create

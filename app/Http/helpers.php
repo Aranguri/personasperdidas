@@ -390,7 +390,7 @@ function personUrl($person)
 /* status */
 
 function statusFromUrlParameter($url_parameter) {
-  if ($url_parameter == null) {
+  if ($url_parameter == null || $url_parameter == 'missing') {
     $status = 'missing';
   }
   else if ($url_parameter == 'looking_for_their_families'){

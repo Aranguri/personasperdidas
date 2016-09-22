@@ -16,13 +16,42 @@ use Carbon\Carbon;
 
 class PersonController extends Controller
 {
-  public function index($status = null)
+  public function index($status = null, $search = null)
   {
     $status = statusFromUrlParameter($status);
 
-    $people = Person::where('status', $status)->orderBy('created_at', 'desc')->paginate(24);
+    $people = Person::where('status', $status);
+
+    if ($search) {
+      $province_id = Province::search($search)->first();
+      if ($province_id) {
+        $province_id = $province_id->id;
+      }
+      else {
+        $province_id = '-1';
+      }
+
+      $country_id = Country::search($search)->first();
+      if ($country_id) {
+        $country_id = $country_id->id;
+      }
+      else {
+        $country_id = '-1';
+      }
+      $people = $people->search($search, $province_id, $country_id);
+
+    }
+
+    $people = $people->orderBy('created_at', 'desc')->paginate(24);
 
     return view('home.people.index', compact('people', 'status'));
+  }
+
+  public function search(Request $request, $status = null)
+  {
+    $search = $request['search'];
+
+    return redirect()->route('home.people.index', [$status, $search]);
   }
 
   public function show($id)

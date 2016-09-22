@@ -310,6 +310,11 @@
   }
 }
 
+#search-form {
+  max-width: 323px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
 
 /* people.create */
 

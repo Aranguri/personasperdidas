@@ -146,6 +146,7 @@ return [
   'same_email' => 'Marcar si querés usar el mismo E-Mail que el público',
   'paginate_number' => 'Número de paginación',
   'remember_me' => 'Recordarme',
+  'search_text' => 'Búsqueda',
 
   // Errors
   'error_message' => 'Algún campo requerido está vacío',

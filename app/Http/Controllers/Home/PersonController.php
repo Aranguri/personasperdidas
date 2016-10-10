@@ -51,6 +51,10 @@ class PersonController extends Controller
   {
     $search = $request['search'];
 
+    if ($status == '') {
+      $status = 'missing';
+    }
+
     return redirect()->route('home.people.index', [$status, $search]);
   }
 

@@ -37,7 +37,7 @@
           <br>
           • Recurrir a los Neurosiquiátricos, personalmente y además intentar dejar alguna foto con datos de contacto en la guardia.
           <br>
-          • Llamar al Registro de Búsqueda de Personas con Padecimientos Mentales de la Ciudad de Buenos Aires: (011) 4346-8900.
+          • Llamar al Registro de Búsqueda de Personas Adultas con Padecimientos Mentales e Incapaces de la Ciudad de Buenos Aires. Tel: 4346-8900 int. 140 ó Línea 108. <a href="http://www.buenosaires.gob.ar/personasbuscadas" target="_blank">http://www.buenosaires.gob.ar/personasbuscadas</a>. Guardia las 24 hs: 1528797985.
           <br>
           • Contactar con el Hospital Borda: (011) 4304-6038 / 4305-6666 o con el Hospital Melchor Romero: (0221) 478-0181 / 0182 / 5972 / 7194
         </p>
@@ -105,7 +105,7 @@
           <br>
           • Recurrir a los Neurosiquiátricos, personalmente y además intentar dejar alguna foto con datos de contacto en la guardia.
           <br>
-          • Llamar al Registro de Búsqueda de Personas con Padecimientos Mentales de la Ciudad de Buenos Aires: (011) 4010-0300.
+          • Llamar al Registro de Búsqueda de Personas Adultas con Padecimientos Mentales e Incapaces de la Ciudad de Buenos Aires. Tel: 4346-8900 int. 140 ó Línea 108. <a href="http://www.buenosaires.gob.ar/personasbuscadas" target="_blank">http://www.buenosaires.gob.ar/personasbuscadas</a>. Guardia las 24 hs: 1528797985.
           <br>
           • Contactar con el Hospital Borda: (011) 4304-6038 / 4305-6666 o con el Hospital Melchor Romero: (0221) 478-0181 / 0182 / 5972 / 7194
         </p>
